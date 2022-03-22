@@ -1,0 +1,18 @@
+.button {
+  width           : 100%;
+  background      : #0400E4;
+  // border       : 2px solid #0400E4;
+  box-sizing      : border-box;
+  border-radius   : 8px;
+  color           : white;
+  text-align      : center;
+  padding         : 14px 32px;
+  line-height     : 20px;
+  font-size       : 18px;
+  font-weight     : 700;
+  margin-top      : 16px;
+
+  ::content {
+    margin: 0 8px;
+  }
+}

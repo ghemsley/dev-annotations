@@ -1,0 +1,68 @@
+.visitCard {
+  display       : flex;
+  flex-direction: row;
+  align-items   : flex-start;
+  width         : 440px;
+  border        : 1px solid #D5D7D7;
+  box-sizing    : content-box;
+  border-radius : 4px;
+
+  >div {
+    width        : 100%;
+    margin-top   : 16px;
+    margin-bottom: 16px;
+    margin-left  : 24px;
+    margin-right : 24px;
+
+    p {
+      color : #181919;
+      margin: 8px 0;
+    }
+
+    >h2 {
+      font-weight: 590;
+      margin     : 0;
+      line-height: 32px;
+      font-size  : 26px;
+    }
+
+    >p {
+
+      font-size  : 19px;
+      line-height: 28px;
+    }
+
+    >div:nth-of-type(2) {
+      display        : flex;
+      flex-direction : row;
+      justify-content: space-between;
+
+      p {
+        font-size  : 15px;
+        line-height: 20px;
+      }
+
+      p:nth-of-type(1) {
+        margin-top: 0;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 18px;
+      }
+
+      >div:first-of-type>p:last-of-type {
+        font-weight: 700;
+      }
+    }
+
+    hr {
+      border: 1px solid #E5E8E8;
+      margin: 24px 0;
+      height: 0;
+    }
+  }
+
+
+
+
+}
