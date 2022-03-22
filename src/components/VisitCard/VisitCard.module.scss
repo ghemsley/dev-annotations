@@ -4,7 +4,7 @@
   align-items   : flex-start;
   width         : 440px;
   border        : 1px solid #D5D7D7;
-  box-sizing    : content-box;
+  box-sizing    : border-box;
   border-radius : 4px;
 
   >div {
@@ -56,13 +56,10 @@
     }
 
     hr {
-      border: 1px solid #E5E8E8;
+      border-top: 1px solid #E5E8E8;
+      border-bottom: 0px solid transparent;
       margin: 24px 0;
       height: 0;
     }
   }
-
-
-
-
 }
