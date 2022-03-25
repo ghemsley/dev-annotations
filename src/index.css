@@ -22,6 +22,10 @@ a:focus {
   height: inherit;
 }
 
+* {
+  transition: all 150ms ease;
+}
+
 /* 
 main, header, footer, section {
   border: 1px dashed gray;
