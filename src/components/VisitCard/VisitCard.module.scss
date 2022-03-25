@@ -1,11 +1,14 @@
 .visitCard {
+  flex          : 0 1 auto;
   display       : flex;
   flex-direction: row;
   align-items   : flex-start;
-  width         : 440px;
   border        : 1px solid #D5D7D7;
   box-sizing    : border-box;
   border-radius : 4px;
+  width         : 100%;
+  max-width     : 440px;
+  margin: 0;
 
   >div {
     width        : 100%;
@@ -56,10 +59,10 @@
     }
 
     hr {
-      border-top: 1px solid #E5E8E8;
+      border-top   : 1px solid #E5E8E8;
       border-bottom: 0px solid transparent;
-      margin: 24px 0;
-      height: 0;
+      margin       : 24px 0;
+      height       : 0;
     }
   }
 }

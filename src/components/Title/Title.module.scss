@@ -1,6 +1,9 @@
 .title {
+  flex: 0 1 auto;
   font-size  : 37px;
   line-height: 40px;
   text-align : left;
-  width      : 440px;
+  width: 100%;
+  max-width: 440px;
+  margin: 0;
 }

@@ -1,6 +1,14 @@
 .page {
-  display: flex;
-  flex-direction: column;
+  display        : flex;
+  flex-direction : column;
   justify-content: flex-start;
-  align-items: center;
+  align-items    : center;
+  gap            : 24px;
+  padding: 0 16px;
+
+  flex: 1 0 auto;
+
+  // &:focus-within {
+  //   box-shadow: 0 0 1px 1px #B6D7EE;
+  // }
 }

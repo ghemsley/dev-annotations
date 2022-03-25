@@ -1,8 +1,16 @@
 .footer {
-  position: absolute;
-  height: 80px;
-  bottom: 12px;
-  width: 100%;
+  display        : flex;
+  flex-direction : column;
+  justify-content: flex-start;
+  gap            : 24px;
+
+  flex          : 0 0 auto;
+  padding       : 0 20px;
+  padding-bottom: 22px;
+
+  // &:focus-within {
+  //   box-shadow: 0 0 1px 1px #B6D7EE;
+  // }
 
   p,
   a {
@@ -11,25 +19,28 @@
   }
 
   a {
-    color: blue;
+    color          : blue;
     text-decoration: none;
   }
 
   hr {
-    border: 1px solid #E5E8E8;
-    margin: 24px 0;
-    height: 0;
+    border-top   : 1px solid #E5E8E8;
+    border-bottom: 0px solid transparent;
+    margin       : 0;
+    height       : 0;
   }
 
   >section {
     display        : flex;
     justify-content: space-between;
-    margin         : 24px 20px;
+      flex-wrap: wrap;
+      gap: 14px;
 
 
     >div {
       display    : flex;
       align-items: baseline;
+       flex: 0 1 auto;
     }
 
     >div:nth-of-type(1) {
@@ -44,11 +55,12 @@
     >div:nth-of-type(2) {
       >hr {
         width    : 24px;
-        transform: rotate(-90deg);
-        margin   : 0;
+        transform: rotate(-90deg) translateX(4px);
       }
+
       >a:last-of-type {
         vertical-align: bottom;
+
         >svg {
           transform: translateY(2px);
         }

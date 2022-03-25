@@ -5,7 +5,7 @@ import styles from './Header.module.scss'
 function Header() {
   return (
     <header className={styles.header}>
-      <a href='/#' tabIndex={-1}>
+      <a href='/#'>
         <Logo />
       </a>
     </header>

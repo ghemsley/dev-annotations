@@ -3,7 +3,7 @@
   background      : #0400E4;
   // border       : 2px solid #0400E4;
   box-sizing      : border-box;
-  border: 0 solid transparent;
+  border          : 0 solid transparent;
   border-radius   : 8px;
   color           : white;
   text-align      : center;
@@ -15,5 +15,12 @@
 
   ::content {
     margin: 0 8px;
+  }
+
+  &:focus {
+    color     : #011782;
+    background: #F0F6FF;
+    box-shadow: 0px 0px 0px 2px #FFFFFF,
+      0px 0px 2px 4px rgba(0, 96, 252, 0.6);
   }
 }

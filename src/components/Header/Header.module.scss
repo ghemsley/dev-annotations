@@ -1,10 +1,15 @@
 .header {
+  flex          : 0 0 60px;
   display       : flex;
   flex-direction: row;
   align-items   : center;
-  height        : 60px;
-  padding-left  : 20px;
-  padding-right : 20px;
-  font-size     : 18px;
-  line-height   : 20px;
+  padding       : 0 20px;
+
+  // &:focus-within {
+  //   box-shadow: 0 0 1px 1px #B6D7EE;
+  // }
+
+  a {
+    line-height: 0;
+  }
 }
