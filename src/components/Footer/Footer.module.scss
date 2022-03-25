@@ -12,10 +12,21 @@
   //   box-shadow: 0 0 1px 1px #B6D7EE;
   // }
 
+  @media (max-width: 480px) {
+    gap           : 8px;
+    padding       : 0 17px;
+    padding-bottom: 17px;
+  }
+
   p,
   a {
     margin   : 0;
     font-size: 14px;
+    // letter-spacing: -0.333px;
+    @media (max-width: 480px) {
+      font-size  : 12px;
+      line-height: 12px;
+    }
   }
 
   a {
@@ -24,8 +35,8 @@
   }
 
   hr {
-    border-top   : 1px solid #E5E8E8;
-    border-bottom: 0px solid transparent;
+    border-top   : 0 solid transparent;
+    border-bottom: 1px solid #E5E8E8;
     margin       : 0;
     height       : 0;
   }
@@ -33,29 +44,48 @@
   >section {
     display        : flex;
     justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 14px;
+    flex-wrap      : wrap;
+    gap            : 12px;
 
 
     >div {
       display    : flex;
       align-items: baseline;
-       flex: 0 1 auto;
+      flex       : 0 1 auto;
+
+      @media (max-width: 480px) {
+        height: 12px;
+      }
     }
 
     >div:nth-of-type(1) {
       gap: 8px;
 
+      @media (max-width: 480px) {
+        gap: 5px;
+      }
+
       >p:last-of-type {
         color    : #565757;
         font-size: 12px;
+
+        @media (max-width: 480px) {
+          font-size: 10px;
+          letter-spacing: -0.15px;
+        }
       }
     }
 
     >div:nth-of-type(2) {
+      gap: 8.5px;
+
       >hr {
         width    : 24px;
         transform: rotate(-90deg) translateX(4px);
+
+        @media (max-width: 480px) {
+          width: 16px;
+        }
       }
 
       >a:last-of-type {
@@ -63,6 +93,11 @@
 
         >svg {
           transform: translateY(2px);
+
+          @media (max-width: 480px) {
+            height: 12px;
+            width : 12px;
+          }
         }
       }
     }

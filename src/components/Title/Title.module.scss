@@ -6,4 +6,10 @@
   width: 100%;
   max-width: 440px;
   margin: 0;
+  letter-spacing: -0.5px;
+
+  @media (max-width: 480px) {
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
