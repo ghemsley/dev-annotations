@@ -2,11 +2,11 @@
   display        : flex;
   flex-direction : column;
   justify-content: flex-start;
-  gap            : 24px;
+  gap            : 25px;
 
   flex          : 0 0 auto;
   padding       : 0 20px;
-  padding-bottom: 22px;
+  padding-bottom: 26px;
 
   // &:focus-within {
   //   box-shadow: 0 0 1px 1px #B6D7EE;
@@ -20,12 +20,13 @@
 
   p,
   a {
-    margin   : 0;
-    font-size: 14px;
+    margin     : 0;
+    font-size  : 14px;
+    line-height: 12px;
+
     // letter-spacing: -0.333px;
     @media (max-width: 480px) {
-      font-size  : 12px;
-      line-height: 12px;
+      font-size: 12px;
     }
   }
 
@@ -35,27 +36,30 @@
   }
 
   hr {
-    border-top   : 0 solid transparent;
+    border       : 0 solid transparent;
     border-bottom: 1px solid #E5E8E8;
     margin       : 0;
-    height       : 0;
   }
 
-  >section {
+  >hr {
+    height: 0;
+  }
+
+  >div {
     display        : flex;
     justify-content: space-between;
     flex-wrap      : wrap;
+    align-items    : center;
     gap            : 12px;
 
 
     >div {
-      display    : flex;
-      align-items: baseline;
-      flex       : 0 1 auto;
+      display: flex;
+      flex   : 0 1 auto;
 
-      @media (max-width: 480px) {
-        height: 12px;
-      }
+      // @media (max-width: 480px) {
+      //   height: 12px;
+      // }
     }
 
     >div:nth-of-type(1) {
@@ -70,7 +74,7 @@
         font-size: 12px;
 
         @media (max-width: 480px) {
-          font-size: 10px;
+          font-size     : 10px;
           letter-spacing: -0.15px;
         }
       }
@@ -80,8 +84,10 @@
       gap: 8.5px;
 
       >hr {
+        flex: 0 0 auto;
         width    : 24px;
-        transform: rotate(-90deg) translateX(4px);
+        height: 0;
+        transform: rotate(-90deg) translateX(-5px);
 
         @media (max-width: 480px) {
           width: 16px;
@@ -89,15 +95,21 @@
       }
 
       >a:last-of-type {
-        vertical-align: bottom;
+        display  : flex;
+        flex-wrap: nowrap;
+        gap      : 6px;
+
+        @media (max-width: 480px) {
+          gap: 2px;
+        }
 
         >svg {
-          transform: translateY(2px);
-
-          @media (max-width: 480px) {
-            height: 12px;
-            width : 12px;
+          @media (min-width: 480px) {
+            transform: scale(1.25);
           }
+
+          height: 12px;
+          width : 12px;
         }
       }
     }

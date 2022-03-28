@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <hr />
-      <section>
+      <div>
         <div>
           <p>
             Powered by <strong>Teladoc</strong>
@@ -36,7 +36,7 @@ function Footer() {
             Help
           </a>
         </div>
-      </section>
+      </div>
     </footer>
   )
 }
