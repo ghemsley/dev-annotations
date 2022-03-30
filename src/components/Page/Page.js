@@ -5,7 +5,7 @@ import styles from './Page.module.scss'
 
 function Page() {
   return (
-    <main className={styles.page} aria-role='bagel'>
+    <main className={styles.page}>
       <Title />
       <VisitCard />
     </main>
