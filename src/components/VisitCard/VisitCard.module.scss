@@ -9,6 +9,11 @@
   width         : 100%;
   max-width     : 440px;
   margin        : 0;
+  margin-bottom: 32px;
+  
+  @media (max-width: 480px) {
+    margin-bottom: 24px;
+  }
 
   >div {
     width : 100%;
