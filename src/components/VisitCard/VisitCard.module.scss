@@ -1,7 +1,7 @@
 .visitCard {
   flex          : 0 1 auto;
   display       : flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items   : flex-start;
   border        : 1px solid #D5D7D7;
   box-sizing    : border-box;
@@ -9,84 +9,85 @@
   width         : 100%;
   max-width     : 440px;
   margin        : 0;
-  margin-bottom: 32px;
-  
+  margin-bottom : 32px;
+  padding       : 16px 24px;
+
   @media (max-width: 480px) {
     margin-bottom: 24px;
+    padding      : 16px;
+  }
+
+  >h2,
+  >p {
+    word-wrap: normal;
+    line-break: loose;
+  }
+
+  p {
+    color         : #181919;
+    margin        : 8px 0;
+    letter-spacing: 0.333px;
+  }
+
+  >h2 {
+    font-weight   : 590;
+    margin        : 0;
+    line-height   : 32px;
+    font-size     : 26px;
+    letter-spacing: 0.333px;
+
+    @media (max-width: 480px) {
+      font-size  : 22px;
+      line-height: 24px;
+    }
+  }
+
+  >p {
+    font-size     : 18px;
+    line-height   : 20px;
+    font-weight   : 400;
+    letter-spacing: 0;
+
+    @media (max-width: 480px) {
+      line-height: 24px;
+    }
+  }
+
+  >hr {
+    border    : 0 solid transparent;
+    border-top: 1px solid #E5E8E8;
+    margin    : 24px 0;
+    height    : 0;
+    width     : 100%;
   }
 
   >div {
-    width : 100%;
-    margin: 16px 24px;
+    display              : grid;
+    width                : 100%;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows   : repeat(2, auto);
+    grid-auto-flow       : column;
 
-    @media (max-width: 480px) {
-      margin: 16px;
-    }
-
-    p {
-      color : #181919;
-      margin: 8px 0;
-      letter-spacing: 0.333px;
-    }
-
-    >h2 {
-      font-weight: 590;
-      margin     : 0;
-      line-height: 32px;
-      font-size  : 26px;
-      letter-spacing: 0.333px;
-
-      @media (max-width: 480px) {
-        font-size  : 22px;
-        line-height: 24px;
-      }
-    }
 
     >p {
-      font-size  : 19px;
+      font-size  : 15px;
+      line-height: 20px;
+      margin     : 0;
+      width      : fit-content;
+    }
+
+    >p:nth-of-type(even) {
+      font-size  : 18px;
       line-height: 28px;
-      font-weight: 400;
-      letter-spacing: 0;
-      @media (max-width: 480px) {
-        line-height: 24px;
-      }
     }
 
-    >div:nth-of-type(2) {
-      display        : flex;
-      flex-direction : row;
-      justify-content: space-between;
-
-      p {
-        font-size  : 15px;
-        line-height: 20px;
-        margin-top: 7px;
-        @media (max-width: 480px) {
-          margin-bottom: 0;
-          margin-top: 6px;
-        }
-
-        &::content {}
-      }
-
-      p:nth-of-type(1) {
-        margin-top: 0;
-      }
-
-      p:nth-of-type(2) {
-        font-size: 18px;
-      }
-
-      >div:first-of-type>p:last-of-type {
-        font-weight: 700;
-      }
+    >p:nth-of-type(2) {
+      font-weight: 700;
     }
 
-    hr {
-      border-top   : 1px solid #E5E8E8;
-      border-bottom: 0px solid transparent;
-      margin       : 23.5px 0;
-      height       : 0;
+    >p:nth-of-type(3),
+    >p:nth-of-type(4) {
+      grid-column: 3;
     }
   }
 }

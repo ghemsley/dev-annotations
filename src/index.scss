@@ -9,14 +9,20 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   font-style: normal;
-  margin    : 0;
-  height    : inherit;
+
+  margin: 0;
+  height: inherit;
 }
 
-a:focus {
+a {
+  border-radius: 4px;
+}
+
+:focus {
   box-shadow: 0px 0px 0px 4px #FFFFFF,
     0px 0px 2px 6px rgba(0, 96, 252, 0.6);
-  border-radius: 4px;
+  border : 0 solid transparent;
+  outline: none;
 }
 
 #root {
@@ -35,30 +41,31 @@ main,
 header,
 footer {
   position: relative;
-
 }
 
-main::after,
-header::after,
-footer::after {
+main::before,
+header::before,
+footer::before {
   content                  : '';
   position                 : absolute;
   top                      : 0;
   left                     : 0;
   width                    : 100%;
   height                   : 100%;
-  // border             : 3px dashed #B6D7EE;
+  // border             : 3px dashed #0067A9;
   // border-spacing        : 4px;
   transition               : all 150ms ease;
-  background               : linear-gradient(to right, #B6D7EE 50%, rgba(255, 255, 255, 0) 0%),
-    linear-gradient(#B6D7EE 50%, rgba(255, 255, 255, 0) 0%),
-    linear-gradient(to right, #B6D7EE 50%, rgba(255, 255, 255, 0) 0%),
-    linear-gradient(#B6D7EE 50%, rgba(255, 255, 255, 0) 0%);
+
+  background: linear-gradient(to right, #0067A9 50%, rgba(255, 255, 255, 0) 0%),
+    linear-gradient(#0067A9 50%, rgba(255, 255, 255, 0) 0%),
+    linear-gradient(to right, #0067A9 50%, rgba(255, 255, 255, 0) 0%),
+    linear-gradient(#0067A9 50%, rgba(255, 255, 255, 0) 0%);
   background-position: top, right, bottom, left;
-  background-size    : 24px 2.5px,
-    3px 24px;
+  background-size    : 20px 1px,
+    1px 20px;
   background-repeat: repeat-x,
     repeat-y;
+  z-index: -1;
 }
 
 

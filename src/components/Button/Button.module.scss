@@ -1,9 +1,7 @@
 .button {
-  width           : 100%;
   background      : #0400E4;
   // border       : 2px solid #0400E4;
-  box-sizing      : border-box;
-  border          : 0 solid transparent;
+  border          : 0px solid #0400E4;
   border-radius   : 8px;
   color           : white;
   text-align      : center;
@@ -11,11 +9,13 @@
   line-height     : 20px;
   font-size       : 18px;
   font-weight     : 700;
-  margin-top      : 18px;
-  letter-spacing: 0.333px;
+  margin-top      : 16px;
+  letter-spacing  : 0.333px;
+  width           : 100%;
+  flex            : 1 1 auto;
 
   @media (max-width: 480px) {
-    margin-top: 22px;
+    margin-top: 20px;
   }
 
   ::content {

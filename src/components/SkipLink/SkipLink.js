@@ -1,25 +1,21 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './SkipLink.module.scss'
 
 function SkipLink() {
-  const [focused, setFocused] = useState(false)
-
-  function handleFocus() {
-    setFocused(true)
+  function handleClick(event) {
+    event?.preventDefault()
+    const mainHeader = document.getElementById('main-header')
+    if (mainHeader) {
+      mainHeader.tabIndex = -1
+      mainHeader.focus()
+      setTimeout(() => mainHeader.removeAttribute('tabindex'), 250)
+      location.href = '/#main-header'
+    }
   }
-
-  function handleBlur() {
-    setFocused(false)
-  }
-
   return (
-    <a
-      className={`${styles.skipLink}${focused ? ' ' + styles.focused : ''}`}
-      onFocus={handleFocus}
-      onBlur={handleBlur}
-      href='/#main-header'>
+    <button className={styles.skipLink} type='button' onClick={handleClick}>
       Skip to main content
-    </a>
+    </button>
   )
 }
 
