@@ -1,6 +1,6 @@
 import React from 'react'
-import Title from '../Title/Title'
-import VisitCard from '../VisitCard/VisitCard'
+import Title from '../Title'
+import VisitCard from '../VisitCard'
 import styles from './Page.module.scss'
 
 function Page() {

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './VisitCard.module.scss'
-import Button from '../Button/Button'
+import Button from '../Button'
 
 function VisitCard() {
   return (
