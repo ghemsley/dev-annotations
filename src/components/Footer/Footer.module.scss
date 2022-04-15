@@ -15,7 +15,7 @@
   @media (max-width: 480px) {
     gap           : 8px;
     padding       : 0 17px;
-    padding-bottom: 17px;
+    padding-bottom: 18px;
   }
 
   p,
@@ -51,7 +51,7 @@
     justify-content: space-between;
     flex-wrap      : wrap;
     align-items    : center;
-    gap            : 12px;
+    gap            : 14px;
 
     >p {
       >strong {
@@ -79,7 +79,7 @@
     >div {
       display: flex;
       flex   : 0 1 auto;
-      gap    : 4px;
+      gap    : 8px;
 
       >hr {
         flex     : 0 0 auto;
@@ -98,7 +98,7 @@
         gap      : 6px;
 
         @media (max-width: 480px) {
-          gap: 2px;
+          gap: 4px;
         }
 
         >svg {

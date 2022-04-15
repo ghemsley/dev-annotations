@@ -5,10 +5,13 @@
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
+    "@rollup/plugin-alias": "^3.1.9",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "@web/dev-server-esbuild": "^0.3.0",
+    "@web/test-runner-playwright": "^0.8.8",
     "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-named-asset-import": "^0.3.8",
@@ -139,6 +142,9 @@
   },
   "devDependencies": {
     "@axe-core/react": "^4.4.2",
+    "@guidepup/playwright": "^0.6.1",
+    "@playwright/test": "^1.21.0",
+    "@web/test-runner": "^0.13.27",
     "eslint": "^8.11.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",

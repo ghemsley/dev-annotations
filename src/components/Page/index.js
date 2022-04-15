@@ -5,7 +5,7 @@ import styles from './Page.module.scss'
 
 function Page() {
   return (
-    <main className={styles.page} role='none'>
+    <main className={styles.page} id='main'>
       <Title />
       <VisitCard />
     </main>

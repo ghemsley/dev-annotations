@@ -4,7 +4,7 @@ import styles from './Footer.module.scss'
 
 function Footer() {
   return (
-    <footer className={styles.footer} role='none'>
+    <footer className={styles.footer}>
       <hr aria-hidden={true} />
       <div>
         <p>

@@ -3,13 +3,20 @@
   display       : flex;
   flex-direction: row;
   align-items   : center;
-  padding       : 14px 20px;
+  padding       : 14px 21px;
 
   // &:focus-within {
   //   box-shadow: 0 0 1px 1px #B6D7EE;
   // }
 
   a {
+    max-width: 168px;
+    max-height: 32px;
     line-height: 0;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
   }
 }

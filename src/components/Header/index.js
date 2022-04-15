@@ -4,7 +4,7 @@ import styles from './Header.module.scss'
 
 function Header() {
   return (
-    <header className={styles.header} role='none'>
+    <header className={styles.header}>
       <a href='/#'>
         <Logo />
       </a>
